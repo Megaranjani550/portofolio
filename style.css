@@ -3,6 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: cursive;
+	 background: url(front.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 a{
 	text-decoration: none;
@@ -32,22 +37,43 @@ nav ul li{
 	font-size: 90px;
 	letter-spacing: 5px;
 	margin-bottom: 20px;
+	animation: typewriter 4s ease forwards;
 
+}
+@keyframes typewriter{
+	to{
+		left: 100%;
+	}
 }
 .content h3{
 	color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 	font-size: 50px;
+
 }
 /*about*/
 #about h1{
-	 color: white;
-  text-shadow: 2px 2px 4px #000000;
-	background-color: lightgrey;
-}
-#about{
 	text-align: center;
+	color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	margin-bottom: 3rem;
+}
+#about p{
+	text-align: center;
+	justify-content: center;
 	padding: 25px 0 25px 0;
+	    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 0 20px rgba(109, 97, 97, 0.472);
+    border-radius: 7px;
+    background-color: rgb(117, 116, 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.7s;
+
 }
 #about_row{
 	display: flex;
@@ -64,57 +90,156 @@ nav ul li{
 	width: 350px;
 	height: 350px;
 	border-radius: 100%;
-
-}
-#about_col h1{
-	text-align:center ;
-	font-family: cursive;
-
-}
-#about_col p{
-	text-align: justify;
+	    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 0 20px rgba(109, 97, 97, 0.472);
+    border-radius: 7px;
+    background-color: rgb(117, 116, 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.7s;
 
 }
 #skills h1{
-	 color: white;
-  text-shadow: 2px 2px 4px #000000;
+	margin-top: 15px;
+	color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	text-align: center;
-    background-color: lightgrey;
+   margin-bottom: 5rem;
 }
 
 #skills_img img{
-	align-items: center;
+    align-items: center;
 	margin-left:150px;
 	width: 60px;
 	height: 50px;
 }
-#education h1{
-	 color: white;
-  text-shadow: 2px 2px 4px #000000;
+ 
+#education h3{
+		color: coral;
+	  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	text-align: center;
-	background-color: lightgrey;
 }
-#education_row {
-	
-    	text-align: center;
-} 
+#education {
+    background-color: white;
+    padding: 30px 7%;
+    position: relative;
+}
+
+#education .education-cols {
+    margin-top: 60px;
+}
+
+#education .education-cols .education-top-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2.4rem;
+    margin-top: 70px;
+}
+
+#education .education-cols .education-top-col .education-item {
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 0 20px rgba(109, 97, 97, 0.472);
+    border-radius: 7px;
+    background-color: rgb(117, 116, 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.7s;
+}
+
+#education .education-cols .education-top-col .education-item i {
+    color: black;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+}
+
 
 #projects h1{
-	 color: white;
-  text-shadow: 2px 2px 4px #000000;
+	margin-top: 5%;
+	color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	text-align: center;
-	background-color: lightgrey;
+	margin-bottom: 2rem;
 }
 .projects_col p{
+    width: 300px;
+    border: 1px solid white;
+    padding: 50px;
+    margin: 20px;
 	margin-left: 100px;
 	width: 1100px;
+	text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 0 20px rgba(109, 97, 97, 0.472);
+    border-radius: 7px;
+    background-color: rgb(117, 116, 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.7s;
 }
-#contact{
+.projects_col h3{
+	margin-left: 50px;
+}
+#contact h3{
 	text-align: center;
 }
-#contact h1{
-	 color: white;
-  text-shadow: 2px 2px 4px #000000;
-	text-align: center;
-	background-color: lightgrey;
+#contact {
+    background-color: white;
+    padding: 30px 7%;
+    position: relative;
+}
+
+#contact .contct-cols {
+    margin-top: 60px;
+}
+
+#contact .contct-cols .con-top-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2.4rem;
+    margin-top: 70px;
+}
+
+#contact .contct-cols .con-top-col .con-item {
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 0 20px rgba(109, 97, 97, 0.472);
+    border-radius: 7px;
+    background-color: rgb(117, 116, 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.7s;
+}
+
+
+
+
+
+/* Mobile view */
+
+@media only screen and (max-width: 850px) {
+
+    #contact .contct-cols .con-bottom-col form input,
+    #contact .contct-cols .con-bottom-col form textarea {
+        width: 100%;
+    }
 }
